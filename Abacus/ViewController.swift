@@ -14,6 +14,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
+    var canvas: Canvas! = nil
     
     @IBOutlet weak private var previewView: UIView!
     private let session = AVCaptureSession()
@@ -77,6 +78,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             let dimensions = CMVideoFormatDescriptionGetDimensions((videoDevice?.activeFormat.formatDescription)!)
             bufferSize.width = CGFloat(dimensions.width)
             bufferSize.height = CGFloat(dimensions.height)
+            canvas = Canvas(bufferSize)
             videoDevice!.unlockForConfiguration()
         } catch {
             print(error)

@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Lego {
+    var name: String
+}
