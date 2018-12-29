@@ -13,6 +13,7 @@
 		A9BE40A021D72B7300B47C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BE409F21D72B7300B47C4B /* Assets.xcassets */; };
 		A9BE40A321D72B7300B47C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BE40A121D72B7300B47C4B /* LaunchScreen.storyboard */; };
 		A9BE40AE21D72B7400B47C4B /* AbacusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40AD21D72B7400B47C4B /* AbacusTests.swift */; };
+		B75C267B30A8E1201CDA12C5 /* Pods_Abacus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAC92BEB0EDBE444AB40CF5 /* Pods_Abacus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29D7708E59568A726B6AFFB7 /* Pods-Abacus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abacus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abacus/Pods-Abacus.release.xcconfig"; sourceTree = "<group>"; };
+		8DAC92BEB0EDBE444AB40CF5 /* Pods_Abacus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abacus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE409521D72B7200B47C4B /* Abacus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abacus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE409821D72B7200B47C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9BE409A21D72B7200B47C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		A9BE40A921D72B7400B47C4B /* AbacusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbacusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE40AD21D72B7400B47C4B /* AbacusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbacusTests.swift; sourceTree = "<group>"; };
 		A9BE40AF21D72B7400B47C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B2F43305A2DB25AE018F10 /* Pods-Abacus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abacus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abacus/Pods-Abacus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75C267B30A8E1201CDA12C5 /* Pods_Abacus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77A9E3A5848DCC599A76F3FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2F43305A2DB25AE018F10 /* Pods-Abacus.debug.xcconfig */,
+				29D7708E59568A726B6AFFB7 /* Pods-Abacus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A27083DB3587D6DE0055335C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DAC92BEB0EDBE444AB40CF5 /* Pods_Abacus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9BE408C21D72B7200B47C4B = {
 			isa = PBXGroup;
 			children = (
 				A9BE409721D72B7200B47C4B /* Abacus */,
 				A9BE40AC21D72B7400B47C4B /* AbacusTests */,
 				A9BE409621D72B7200B47C4B /* Products */,
+				77A9E3A5848DCC599A76F3FF /* Pods */,
+				A27083DB3587D6DE0055335C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BE40B221D72B7400B47C4B /* Build configuration list for PBXNativeTarget "Abacus" */;
 			buildPhases = (
+				ED94FC98AB2F652C1C87FD20 /* [CP] Check Pods Manifest.lock */,
 				A9BE409121D72B7200B47C4B /* Sources */,
 				A9BE409221D72B7200B47C4B /* Frameworks */,
 				A9BE409321D72B7200B47C4B /* Resources */,
+				3A45E6DBA090FFDFD6486956 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A45E6DBA090FFDFD6486956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Abacus/Pods-Abacus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abacus/Pods-Abacus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED94FC98AB2F652C1C87FD20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Abacus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9BE409121D72B7200B47C4B /* Sources */ = {
@@ -358,6 +433,7 @@
 		};
 		A9BE40B321D72B7400B47C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B2F43305A2DB25AE018F10 /* Pods-Abacus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +452,7 @@
 		};
 		A9BE40B421D72B7400B47C4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D7708E59568A726B6AFFB7 /* Pods-Abacus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
