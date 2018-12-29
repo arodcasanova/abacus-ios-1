@@ -13,6 +13,10 @@
 		A9BE40A021D72B7300B47C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BE409F21D72B7300B47C4B /* Assets.xcassets */; };
 		A9BE40A321D72B7300B47C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BE40A121D72B7300B47C4B /* LaunchScreen.storyboard */; };
 		A9BE40AE21D72B7400B47C4B /* AbacusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40AD21D72B7400B47C4B /* AbacusTests.swift */; };
+		A9BE40BF21D73DAD00B47C4B /* LegoDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40BE21D73DAD00B47C4B /* LegoDetectorViewController.swift */; };
+		A9BE40C121D73DEE00B47C4B /* LegoDetectorV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40C021D73DEE00B47C4B /* LegoDetectorV2.mlmodel */; };
+		A9BE40C421D73F3000B47C4B /* Lego.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40C221D73F3000B47C4B /* Lego.swift */; };
+		A9BE40C521D73F3000B47C4B /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE40C321D73F3000B47C4B /* Canvas.swift */; };
 		B75C267B30A8E1201CDA12C5 /* Pods_Abacus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAC92BEB0EDBE444AB40CF5 /* Pods_Abacus.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		A9BE40A921D72B7400B47C4B /* AbacusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbacusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BE40AD21D72B7400B47C4B /* AbacusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbacusTests.swift; sourceTree = "<group>"; };
 		A9BE40AF21D72B7400B47C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9BE40BE21D73DAD00B47C4B /* LegoDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoDetectorViewController.swift; sourceTree = "<group>"; };
+		A9BE40C021D73DEE00B47C4B /* LegoDetectorV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LegoDetectorV2.mlmodel; sourceTree = "<group>"; };
+		A9BE40C221D73F3000B47C4B /* Lego.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lego.swift; sourceTree = "<group>"; };
+		A9BE40C321D73F3000B47C4B /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		E2B2F43305A2DB25AE018F10 /* Pods-Abacus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abacus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abacus/Pods-Abacus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,12 +109,16 @@
 		A9BE409721D72B7200B47C4B /* Abacus */ = {
 			isa = PBXGroup;
 			children = (
+				A9BE40C021D73DEE00B47C4B /* LegoDetectorV2.mlmodel */,
 				A9BE409821D72B7200B47C4B /* AppDelegate.swift */,
 				A9BE409A21D72B7200B47C4B /* ViewController.swift */,
+				A9BE40BE21D73DAD00B47C4B /* LegoDetectorViewController.swift */,
 				A9BE409C21D72B7200B47C4B /* Main.storyboard */,
 				A9BE409F21D72B7300B47C4B /* Assets.xcassets */,
 				A9BE40A121D72B7300B47C4B /* LaunchScreen.storyboard */,
 				A9BE40A421D72B7300B47C4B /* Info.plist */,
+				A9BE40C321D73F3000B47C4B /* Canvas.swift */,
+				A9BE40C221D73F3000B47C4B /* Lego.swift */,
 			);
 			path = Abacus;
 			sourceTree = "<group>";
@@ -272,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BE40C421D73F3000B47C4B /* Lego.swift in Sources */,
 				A9BE409B21D72B7200B47C4B /* ViewController.swift in Sources */,
 				A9BE409921D72B7200B47C4B /* AppDelegate.swift in Sources */,
+				A9BE40BF21D73DAD00B47C4B /* LegoDetectorViewController.swift in Sources */,
+				A9BE40C121D73DEE00B47C4B /* LegoDetectorV2.mlmodel in Sources */,
+				A9BE40C521D73F3000B47C4B /* Canvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
