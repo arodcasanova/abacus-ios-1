@@ -19,7 +19,6 @@ class Canvas {
     var bufferSize: CGSize
     private var componentValues: [String: String] = [:]
     
-    // generate template every 10-15 calls. compile ongoing list of seen objects and then make template
     
     init(_ bufferSize: CGSize) {
         socket = manager.defaultSocket
@@ -38,11 +37,6 @@ class Canvas {
     public func handle(_ observedLegos: [VNRecognizedObjectObservation]) {
         if let baseplate = observedLegos.first(where: { $0.labels[0].identifier == "6x12_green" }) {
             createGridTemplate(observedLegos)
-            
-            //            self.socket.emit("templateUpdate", grid)
-            // form template
-            
-            // if new template, emit socket event
         }
         
     }
@@ -56,7 +50,7 @@ class Canvas {
             addPiecesToTemplate(using: baseplateBounds, adding: observations)
             
             
-            // socket event
+            // can emit socket event here
         }
         
         
@@ -116,8 +110,6 @@ class Canvas {
     private func getLegoDimensions(from pieceName: String) -> String {
         return pieceName.components(separatedBy: "_")[0]
     }
-    
-    
     
     private struct Constants {
         static let defaultColumnCount = 12
